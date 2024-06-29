@@ -9,7 +9,7 @@
     "dev": "next dev",
     "dev:email": "email dev -p 3333",
     "dev:turbo": "next dev --turbo",
-    "lint": "next lint",
+    "lint": "next lint --no-cache",
     "start": "next start"
   },
   "dependencies": {
