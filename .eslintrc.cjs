@@ -40,6 +40,7 @@ const config = {
         fixStyle: 'inline-type-imports',
       },
     ],
+    "no-unused-vars": "off",
     '@typescript-eslint/no-unused-vars': 'off',
 
     'simple-import-sort/imports': 'error',
