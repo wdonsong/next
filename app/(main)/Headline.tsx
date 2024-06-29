@@ -49,6 +49,14 @@ function Founder() {
   )
 }
 
+function Text({ text }) {
+  return (
+    <span className="group inline-flex items-center">
+      <span>{text}</span>
+    </span>
+  )
+}
+
 export function Headline() {
   return (
     <div className="max-w-2xl">
@@ -63,9 +71,13 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        <Developer />，<Designer />，
+        <Developer />
+        ，<Text text="认知科学初学者" />
+        {/* <span className="block h-2" />，<Text text="信息的俘虏" />
         <span className="block h-2" />
-        <OCD />，<Founder />
+        <Text text="中国文化爱好者" /> */}
+        {/* <span className="block h-2" /> */}
+        {/* <OCD />，<Founder /> */}
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -80,9 +92,8 @@ export function Headline() {
         }}
       >
         <Balancer>
-          我是 Cali，
-          <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink>
-          创始人，目前带领着佐玩致力于创造一个充满创造力的工作环境，同时鼓励团队创造影响世界的产品。
+          我是 Wdon，
+          {/* <PeekabooLink href="https://zolplay.com">佐玩</PeekabooLink> */}
           我热爱开发，设计，创新，享受生活，以及在未知领域中探索。
         </Balancer>
       </motion.p>
@@ -98,7 +109,7 @@ export function Headline() {
           delay: 0.25,
         }}
       >
-        <SocialLink
+        {/* <SocialLink
           href="https://cali.so/twitter"
           aria-label="我的推特"
           platform="twitter"
@@ -112,20 +123,20 @@ export function Headline() {
           href="https://cali.so/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
-        />
+        /> */}
         <SocialLink
-          href="https://cali.so/github"
+          href="https://github.com/wdonsong"
           aria-label="我的 GitHub"
           platform="github"
         />
-        <SocialLink
+        {/* <SocialLink
           href="https://cali.so/tg"
           aria-label="我的 Telegram"
           platform="telegram"
-        />
+        /> */}
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
-          href="mailto:hi@cali.so"
+          href="mailto:wdonsong@gmail.com"
           aria-label="我的邮箱"
           platform="mail"
         />
